@@ -6,7 +6,7 @@ export default function App(){
     const calculatorTopBtn = "123+";
     const calculatorTopNumbersOp = "456-";
     const calculatorMidNumbersOp = "789*";
-    const calculatorLowNumbersOp = "d.0/";
+    const calculatorLowNumbersOp = ".0=/";
 
     const arrOfOperators = ["+","-","*","/"];
 
@@ -51,6 +51,14 @@ export default function App(){
                     break;
                     case "*":
                     setPreviousVal(`${previousNumber * currentNumber}`);
+                    setCurrentVal("");
+                    break;
+                    case "-":
+                    setPreviousVal(`${previousNumber - currentNumber}`);
+                    setCurrentVal("");
+                    break;
+                    case "/":
+                    setPreviousVal(`${previousNumber / currentNumber}`);
                     setCurrentVal("");
                     break;
                     default:
@@ -124,7 +132,7 @@ export default function App(){
                 <div>
                     {lowNumberOp}
                 </div>
-                <button value={"="} onClick={handleBtnClick}>=</button>
+                {/* <button value={"="} onClick={handleBtnClick}>=</button> */}
           </div>
         </main>
     )
