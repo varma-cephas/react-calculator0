@@ -1,0 +1,26 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+div>button{
+  width: 5rem;
+  height: 2.5em;
+}
+div>input{
+  text-align: right;
+  font-size: 1.5rem;
+}
+.btnContainer{
+  width: fit-content;
+  border: 2px solid;
+  margin: 5rem auto;
+}
+main>div>input{
+  width: 19.5rem;
+  height: 2rem;
+}
+main>div>button{
+  width: 100%;
+}
+
